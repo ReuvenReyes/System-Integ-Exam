@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FakeStore - Contact</title>
+  <link rel="stylesheet" href="Reyes_styles.css">
+</head>
+<body>
+  <header>
+    <h1>FakeStore</h1>
+  </header>
+
+  <!-- Menu Container -->
+  <div class="menu-container">
+    <div class="menu-icon" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+
+  <!-- Popup Menu -->
+  <nav id="popup-menu" class="sticky-menu">
+    <a href="Reyes_main.html">Home</a>
+    <a href="Reyes_Store.html">Store</a>
+    <a href="Reyes_about.html">About</a>
+    <a href="Reyes_Contact.html">Contact</a>
+  </nav>
+
+  <main>
+    <section class="contact-section">
+      <div class="contact-form">
+        <h2>Contact Us</h2>
+
+        <form>
+          <div class="input-group">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name">
+          </div>
+
+          <div class="input-group">
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" placeholder="Enter your message"></textarea>
+          </div>
+
+          <div class="send-button">
+            <button type="submit">Send</button>
+          </div>
+        </form>
+      </div>
+
+      <div class="contact-info">
+        <p>Email: <a href="mailto:reuvenluis.reyes@gmail.com">reuvenluis.reyes@gmail.com</a> | Phone: 0993-458-7160 | Facebook: <a href="https://www.facebook.com/profile.php?id=100078250667061" target="_blank">Click here</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 FakeStore. All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('popup-menu');
+      menu.classList.toggle('active');
+    }
+  </script>
+</body>
+</html>
