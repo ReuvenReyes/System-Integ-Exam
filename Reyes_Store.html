@@ -41,7 +41,7 @@
   <div id="product-modal" class="modal">
     <div class="modal-content">
       <span class="close-btn" onclick="closeModal()">&times;</span>
-      <p id="modal-description"></p> <!-- Only description shown here -->
+      <p id="modal-description"></p>
     </div>
   </div>
 
@@ -59,12 +59,12 @@
     // Show description
     function showDetails(description) {
       document.getElementById('modal-description').textContent = `Description: ${description}`;
-      document.getElementById('product-modal').style.display = 'flex'; // Show the modal
+      document.getElementById('product-modal').style.display = 'flex'; 
     }
 
     // Close the modal
     function closeModal() {
-      document.getElementById('product-modal').style.display = 'none'; // Hide the modal
+      document.getElementById('product-modal').style.display = 'none';
     }
 
     document.addEventListener('DOMContentLoaded', () => {
@@ -76,7 +76,6 @@
         .then(products => {
           productList.innerHTML = '';
           products.forEach(product => {
-            // Create a product card
             const productCard = document.createElement('div');
             productCard.classList.add('product-card');
             productCard.innerHTML = `
