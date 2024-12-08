@@ -63,6 +63,14 @@
     </section>
   </main>
 
+  <!-- Modal for Product Details -->
+  <div id="product-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeModal()">&times;</span>
+      <p id="modal-description"></p> <!-- Only description shown here -->
+    </div>
+  </div>
+
   <script>
     function toggleMenu() {
       const menu = document.getElementById('popup-menu');
@@ -72,6 +80,17 @@
     function scrollToSection(sectionId) {
       const section = document.getElementById(sectionId);
       section.scrollIntoView({ behavior: 'smooth' });
+    }
+
+    // Show description
+    function showDetails(description) {
+      document.getElementById('modal-description').textContent = `Description: ${description}`;
+      document.getElementById('product-modal').style.display = 'flex'; // Show the modal
+    }
+
+    // Close the modal
+    function closeModal() {
+      document.getElementById('product-modal').style.display = 'none'; // Hide the modal
     }
 
     document.addEventListener('DOMContentLoaded', () => {
@@ -90,7 +109,7 @@
               <img src="${product.image}" alt="${product.title}">
               <h3>${product.title}</h3>
               <p><strong>Price:</strong> $${product.price}</p>
-              <button onclick='alert("View Details for ${product.title}")'>View Details</button>
+              <button onclick='showDetails("${product.description}")'>View Details</button>
             `;
             productList.appendChild(productCard);
           });
