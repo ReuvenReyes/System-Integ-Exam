@@ -31,7 +31,7 @@ body {
     justify-content: center;
     text-align: center;
     margin-top: 50px;
-    min-height: calc(10vh - 160px); /* Full viewport height minus header and footer */
+    min-height: calc(10vh - 160px);
 }
 
 .centered h2 {
@@ -59,10 +59,10 @@ body {
   
   .homepage-center p {
     font-size: 1.2em;
-    margin-bottom: 40px; /* Increase space between text and buttons */
+    margin-bottom: 40px;
   }
   
-  /* Buttons Section (Below the Welcome section) */
+  /* Buttons Section */
   .homepage-buttons-container {
     display: flex;
     justify-content: center;
@@ -97,13 +97,13 @@ body {
     justify-content: center;
     text-align: center;
     margin-top: 50px;
-    min-height: calc(10vh - 160px); /* Full viewport height minus header and footer */
+    min-height: calc(10vh - 160px);
   }
   
   .contact-form {
     display: flex;
     flex-direction: column;
-    gap: 30px; /* Increased gap between fields */
+    gap: 30px;
     width: 100%;
     max-width: 600px;
     margin-top: 20px;
@@ -131,7 +131,7 @@ body {
     border: 1px solid #ccc;
     border-radius: 5px;
     width: 100%;
-    margin-bottom: 20px; /* spaces */
+    margin-bottom: 20px; 
   }
   
   .send-button {
@@ -153,7 +153,7 @@ body {
     background-color: #444;
   }
   
-  /* Contact Info at Bottom */
+  /* Contact Info */
   .contact-info {
     margin-top: 30px;
     font-size: 1.2em;
@@ -261,7 +261,7 @@ body {
     background: #4CAF50;
   }
   
-  /* Store Page Product Card */
+  /* Product Card */
   #product-list {
     display: flex;
     flex-wrap: wrap;
