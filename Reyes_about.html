@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FakeStore - About</title>
+  <link rel="stylesheet" href="Reyes_styles.css">
+</head>
+<body>
+  <header>
+    <h1>FakeStore</h1>
+  </header>
+
+  <!-- Menu Container -->
+  <div class="menu-container">
+    <div class="menu-icon" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+
+  <!-- Popup Menu -->
+  <nav id="popup-menu" class="sticky-menu">
+    <a href="Reyes_main.html">Home</a>
+    <a href="Reyes_Store.html">Store</a>
+    <a href="Reyes_about.html">About</a>
+    <a href="Reyes_Contact.html">Contact</a>
+  </nav>
+
+  <main>
+    <section id="about" class="centered">
+      <h2>About FakeStore</h2>
+      <p>FakeStore is your one-stop online store for quality products at great prices. We strive to bring you the best products in various categories, including electronics, fashion, home essentials, and much more. With our user-friendly platform, fast delivery, and excellent customer service, shopping has never been easier. Join us in exploring the best deals and offers tailored just for you!</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 FakeStore. All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('popup-menu');
+      menu.classList.toggle('active');
+    }
+  </script>
+</body>
+</html>
