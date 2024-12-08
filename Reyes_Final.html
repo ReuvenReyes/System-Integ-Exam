@@ -81,7 +81,7 @@
       fetch('https://fakestoreapi.com/products')
         .then(response => response.json())
         .then(products => {
-          productList.innerHTML = ''; // Clear loading message
+          productList.innerHTML = '';
           products.forEach(product => {
             // Create a product card
             const productCard = document.createElement('div');
